@@ -10,12 +10,15 @@ const BookList = () => {
     console.log(book);
   };
   return (
-    <section className="bookList">
-      {books.map((book) => {
-        const { id } = book;
-        return <Book {...book} key={id} getBook={getBook} />;
-      })}
-    </section>
+    <>
+      <h1 className="title-page">Amazon Best Seller Book</h1>
+      <section className="bookList">
+        {books.map((book) => {
+          const { id } = book;
+          return <Book {...book} key={id} getBook={getBook} />;
+        })}
+      </section>
+    </>
   );
 };
 
