@@ -2,46 +2,33 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
-
-const firstBook = {
-  author: "Dav Pilkey",
-  title: "Dog Man: Twenty Thousand Fleas Under the Sea",
-  img: "https://images-na.ssl-images-amazon.com/images/I/81fyoFoaxlL._AC_UL600_SR600,400_.jpg",
-};
-
-const secondBook = {
-  author: "Peter Attia MD",
-  title: "Outlive: The Science and Art of Longevity ",
-  img: "https://m.media-amazon.com/images/I/411pTpK1xOL._SX383_BO1,204,203,200_.jpg",
-};
+import { books } from "./books";
 
 const BookList = () => {
+  const getBook = (id) => {
+    const book = books.find((books) => books.id === id);
+    console.log(book);
+  };
   return (
     <section className="bookList">
-      <Book
-        author={firstBook.author}
-        img={firstBook.img}
-        title={firstBook.title}
-      />
-      <Book
-        author={secondBook.author}
-        img={secondBook.img}
-        title={secondBook.title}
-      />
+      {books.map((book) => {
+        const { id } = book;
+        return <Book {...book} key={id} getBook={getBook} />;
+      })}
     </section>
   );
 };
 
-const Book = ({ img, title, author }) => {
+const Book = (props) => {
+  const { img, title, author, getBook, id } = props;
+
   return (
     <article className="book">
-      <img src={img} alt="Dog Man: Twenty Thousand Fleas Under the Sea" />
+      <img src={img} alt={title} />
       <h2>{title}</h2>
-      <h4
-        style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.5rem" }}
-      >
-        {author}
-      </h4>
+      <h4>{author} </h4>
+      <button onClick={() => getBook(id)}> Click me</button>
+      <span className="number">{id}</span>
     </article>
   );
 };
