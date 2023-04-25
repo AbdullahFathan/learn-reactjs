@@ -1,10 +1,10 @@
-import Food from "./component/state_array.jsx";
+import Object from "./component/state_object.jsx";
 
 function App() {
   return (
     <div className="container">
       <h1>Advanced React</h1>
-      <Food />
+      <Object />
     </div>
   );
 }
