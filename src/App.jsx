@@ -1,10 +1,10 @@
-import Object from "./component/state_object.jsx";
+import FetchApi from "./component/useEffect/fetch_example";
 
 function App() {
   return (
     <div className="container">
       <h1>Advanced React</h1>
-      <Object />
+      <FetchApi />
     </div>
   );
 }
