@@ -1,4 +1,4 @@
-import FetchApi from "./component/useEffect/fetch_example";
+import FetchApi from "./component/multiReturn/fetch_multi";
 
 function App() {
   return (
