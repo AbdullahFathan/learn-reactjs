@@ -1,10 +1,10 @@
-import FetchApi from "./component/multiReturn/fetch_multi";
+import Stater from "./component/multiReturn/short_circuit";
 
 function App() {
   return (
     <div className="container">
       <h1>Advanced React</h1>
-      <FetchApi />
+      <Stater />
     </div>
   );
 }
