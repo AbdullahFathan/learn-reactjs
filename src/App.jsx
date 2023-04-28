@@ -1,4 +1,4 @@
-import Stater from "./component/multiReturn/short_circuit";
+import Stater from "./component/multiReturn/challenge";
 
 function App() {
   return (
