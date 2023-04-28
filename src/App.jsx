@@ -1,4 +1,4 @@
-import Stater from "./component/multiReturn/challenge";
+import Stater from "./component/loopData/list";
 
 function App() {
   return (
