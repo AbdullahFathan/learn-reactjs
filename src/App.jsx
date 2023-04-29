@@ -1,4 +1,4 @@
-import Stater from "./component/form/form_example";
+import Stater from "./component/form/user_challenge";
 
 function App() {
   return (
