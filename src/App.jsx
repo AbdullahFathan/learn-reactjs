@@ -1,4 +1,4 @@
-import Stater from "./component/loopData/list";
+import Stater from "./component/form/form_example";
 
 function App() {
   return (
