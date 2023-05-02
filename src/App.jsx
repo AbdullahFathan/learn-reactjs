@@ -1,4 +1,4 @@
-import Stater from "./component/form/multiple_input";
+import Stater from "./component/useRef/example_case";
 
 function App() {
   return (
