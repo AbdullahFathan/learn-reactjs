@@ -1,9 +1,8 @@
-import Stater from "./component/useRef/example_case";
+import Stater from "./component/custom_hook/fetch_api";
 
 function App() {
   return (
     <div className="container">
-      <h1>Advanced React</h1>
       <Stater />
     </div>
   );
