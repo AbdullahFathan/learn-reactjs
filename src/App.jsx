@@ -1,4 +1,4 @@
-import Stater from "./component/custom_hook/fetch_api";
+import Stater from "./component/contexApi/navbar";
 
 function App() {
   return (
